@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mywebpage</title>
+    <link rel="stylesheet" href="styel2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar" id="navbarr">
+            <h1>NECTTO</h1>
+            <div class="nav-link" id="navLinks">
+                <span id="close-icon"><i class="fa fa-window-close" onclick="hideMenu()"></i></span>
+                <ul>
+                <li><a href="#"><i class="fa fa-home"></i>Home</a></i></li>
+                <li><a href="#"><i class="fa fa-clone"></i>Service</a></li>
+                <li><a href="#"><i class="fa fa-user"></i>About us</a></li>
+                <li><a href="#"><i class="fa fa-edit"></i>training</a></li>
+                <li><a href="#"><i class="fa fa-phone"></i>Contact</a></li>
+            </ul>
+        </div>
+        <span id="menu-icon"><i class="fa fa-bars" onclick="showMenu()"></i></span>
+        </div>
+        
+        <div class="content">
+            <h1>Web & Design Development</h1>
+            <p> We Focus on Quality & Cost Effective Solution.Mobile <br>
+                 Development and Web Development Have  <br>
+                Totally Different Career Scopes </p>
+                <div class="btn">
+                    <button type="button"><span></span> WATCH MORE</button>
+                    <button type="button"><span></span> SUBSCRIBE</button>
+                </div>
+              
+        </div>
+    </div>
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-330";
+        }
+    </script>
+</body>
+</html>
